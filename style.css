@@ -517,15 +517,27 @@ footer {
     }
 
     .logo-text {
-        font-size: 0.8rem !important; /* SMALLER REFINED LOGO */
-        line-height: 1.2 !important;
-        max-width: 200px !important;
+        font-size: 0.9rem !important; /* SLIGHTLY LARGER FOR CLARITY */
+        line-height: 1.1 !important;
+        max-width: none !important; /* ALLOW FULL WIDTH TO PREVENT WRAPPING */
+        width: auto !important;
     }
 
-    .logo-text span {
-        font-size: 0.7rem !important;
-        display: block !important;
-        letter-spacing: 0.5px !important;
+    .logo-main {
+        white-space: nowrap !important; /* FORCE ONE LINE */
+    }
+
+    .logo-main span {
+        display: inline !important; /* KEEP "INC." ON THE SAME LINE */
+        font-size: inherit !important;
+        color: var(--text-muted) !important;
+    }
+
+    .logo-tagline {
+        display: block !important; /* ENSURE TAGLINE IS ON NEXT LINE */
+        font-size: 0.65rem !important;
+        letter-spacing: 2px !important;
+        color: var(--text-muted) !important;
     }
 
     /* Mobile Menu Toggle Positioning */
