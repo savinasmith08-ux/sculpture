@@ -123,15 +123,19 @@ h1, h2, h3, h4, .logo-text {
 .hero {
     height: 90vh;
     padding: 0;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/hero-global.png');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/hero-sculpture.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #ffffff;
     text-align: center;
+}
+
+.hero h1, .hero p, .hero .subtitle {
+    color: #ffffff !important;
 }
 
 .majestic-title {
@@ -661,7 +665,7 @@ footer {
         display: block !important; /* DISABLING FLEX TO PREVENT JUMPING */
         padding-top: 200px !important; /* MASSIVE SPACING TO ENSURE VISIBILITY */
         padding-bottom: 80px !important;
-        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/featured-2.png') !important; /* DARKER FOR BETTER CONTRAST */
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/hero-sculpture.png') !important; /* DARKER FOR BETTER CONTRAST */
         background-size: cover !important;
         background-position: center !important;
         color: white !important;
@@ -697,7 +701,7 @@ footer {
         flex-direction: column !important;
         justify-content: center !important;
         padding-top: 120px !important;
-        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/featured-1.png') !important;
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/hero-sculpture.png') !important;
         background-size: cover !important;
         background-position: center !important;
         color: white !important;
@@ -734,7 +738,7 @@ footer {
     .hero-fixed {
         padding-top: 180px !important;
         min-height: 70vh !important;
-        background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('abstract_sculpture_featured_1775217284813.png') !important; /* FRESH CLEAN IMAGE */
+        background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('assets/images/hero-sculpture.png') !important; /* FRESH CLEAN IMAGE */
         background-size: cover !important;
         background-position: center !important;
         display: flex !important;
@@ -780,7 +784,7 @@ footer {
     /* Videos Specific Hero Fix */
     .hero-videos {
         min-height: 80vh !important;
-        background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('assets/images/hero-global.png') !important;
+        background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('assets/images/hero-sculpture.png') !important;
         background-size: cover !important;
         background-position: center !important;
         background-attachment: fixed !important;
@@ -789,8 +793,12 @@ footer {
         align-items: center !important;
         justify-content: center !important;
         text-align: center !important;
-        color: white !important;
+        color: #ffffff !important;
         padding-top: 100px !important; /* REDUCED TOP PADDING ON DESKTOP TO ALLOW VERTICAL CENTERING */
+    }
+
+    .hero-videos h1, .hero-videos p {
+        color: #ffffff !important;
     }
 
     .hero-videos h1 {
