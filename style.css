@@ -50,7 +50,7 @@ h1, h2, h3, h4, .logo-text {
 }
 
 .nav-content {
-    height: 80px;
+    height: 65px;
     display: flex;
     justify-content: space-between;
     align-items: center;
