@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artists | Gibbs Sculpture Gallery</title>
+    <meta name="description"
+        content="View our extensive selection of represented professional sculptors. Contemporary, abstract, figurative, and representational sculptures by over 60 established artists.">
+
+    <!-- Google Fonts: Montserrat for Headings, Inter for Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Hard-pinned Lucide with versioning -->
+    <script src="https://unpkg.com/lucide@0.400.0/dist/umd/lucide.min.js"></script>
+
+    <!-- Font Awesome with versioning -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Local CSS with cache-busting -->
+    <link rel="stylesheet" href="style.css?v=1.1.4">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="glass-nav">
+        <div class="container nav-content">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <span class="logo-text">
+                        <span class="logo-main">GIBBS SCULPTURE GALLERY</span>
+                        <span class="logo-tagline">Gibbs Sculpture Gallery</span>
+                    </span>
+                </a>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="artists.html" class="active">Artists</a></li>
+                    <li><a href="sculpturewalk.html">SculptureWalk</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="contact-btn">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i data-lucide="menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero hero-home-fix">
+            <div class="container hero-content">
+                <h1 class="fade-in majestic-title">Gibbs Sculpture Gallery</h1>
+                <p class="subtitle fade-in majestic-subtitle">ESTABLISHED 1990</p>
+                <div class="description fade-in majestic-description">
+                    <p>Welcome to our extensive selection of represented professional sculptors, curated over 35 years
+                        of focusing exclusively on fine art sculpture. Discover abstract, figurative, and
+                        representational works by over 60 established, mid-career, and emerging contemporary sculptors.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Carousel/Grid -->
+        <section class="featured">
+            <div class="container">
+                <h2 class="section-title">Featured Highlights</h2>
+                <div class="featured-grid">
+                    <div class="featured-card" style="--i:1">
+                        <img src="assets/images/stone-1.jpg" alt="Abstract Sculpture">
+                        <div class="card-overlay">
+                            <h3>Abstract Expressions</h3>
+                            <p>Polished Marble & Gold</p>
+                        </div>
+                    </div>
+                    <div class="featured-card" style="--i:2">
+                        <img src="assets/images/stone-2.jpg" alt="Bronze Sculpture">
+                        <div class="card-overlay">
+                            <h3>Classical Bronze</h3>
+                            <p>Dynamic Figurative Form</p>
+                        </div>
+                    </div>
+                    <div class="featured-card" style="--i:3">
+                        <img src="assets/images/stone-3.jpg" alt="Kinetic Steel">
+                        <div class="card-overlay">
+                            <h3>Kinetic Geometry</h3>
+                            <p>Reflective Stainless Steel</p>
+                        </div>
+                    </div>
+                    <div class="featured-card" style="--i:4">
+                        <img src="assets/images/clay-1.jpg" alt="Stone Sculpture">
+                        <div class="card-overlay">
+                            <h3>Organic Stone</h3>
+                            <p>Natural Erosion Aesthetic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Controls -->
+        <section class="gallery-controls sticky-controls">
+            <div class="container controls-wrapper">
+                <div class="search-bar">
+                    <input type="text" id="artistSearch" placeholder="Search artists...">
+                </div>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="bronze">Bronze</button>
+                    <button class="filter-btn" data-filter="steel">Clay</button>
+                    <button class="filter-btn" data-filter="glass">Glass</button>
+                    <button class="filter-btn" data-filter="stone">Stone</button>
+                    <button class="filter-btn" data-filter="abstract">Yellow Marble</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artist Directory -->
+        <section class="artist-directory">
+            <div class="container">
+                <div id="artistGrid" class="artist-grid">
+                    <!-- Dynamic Artist List will be injected here -->
+                </div>
+                <div id="noResults" class="no-results hidden">
+                    <p>No artists found matching your criteria.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <div class="logo">
+                    <span class="logo-text" style="font-size: 1.1rem;">GIBBS SCULPTURE GALLERY<span> INC.</span></span>
+                </div>
+                <p>Curating exceptional sculpture for 35 years.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Contact</h4>
+                    <p><i data-lucide="phone"></i> <a href="tel:+16468814545"
+                            style="color: inherit; text-decoration: none;">+1(646)-881-4545</a></p>
+                    <p><i data-lucide="mail"></i> <a href="mailto:amandamarshall770@gmail.com"
+                            style="color: inherit; text-decoration: none;">amandamarshall770@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>All contents copyright Gibbs Sculpture Gallery 2018 to 2026. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js?v=1.1.4"></script>
+    <script>
+        // Initialize Lucide icons with forced check
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        });
+    </script>
+</body>
+
+</html>

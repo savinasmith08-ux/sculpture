@@ -7,7 +7,7 @@ const artists = [
         materials: ["Bronze", "Stone", "Abstract"][i % 3] === "Bronze" ? ["Bronze", "Patina"] : 
                    ["Bronze", "Stone", "Abstract"][i % 3] === "Stone" ? ["Marble", "Granite"] : ["Mixed Media"],
         style: ["Abstract", "Figurative", "Corporate"][i % 3],
-        image: `assets/images/featured-${(i % 4) + 1}.png`
+        image: `assets/images/stone-${(i % 3) + 1}.jpg`
     })),
     // Nadine Lopez (40% - 24 items)
     ...Array(24).fill().map((_, i) => ({
@@ -16,7 +16,7 @@ const artists = [
         materials: ["Steel", "Chrome", "Glass"][i % 3] === "Steel" ? ["Stainless Steel", "Industrial"] : 
                    ["Steel", "Chrome", "Glass"][i % 3] === "Chrome" ? ["Polished Chrome"] : ["Glass", "Crystal"],
         style: ["Kinetic", "Modern", "Minimalist"][i % 3],
-        image: `assets/images/featured-${((i + 1) % 4) + 1}.png`
+        image: `assets/images/clay-${(i % 5) + 1}.jpg`
     })),
     // James Morgan (20% - 12 items)
     ...Array(12).fill().map((_, i) => ({
@@ -25,23 +25,13 @@ const artists = [
         materials: ["Wood", "Bronze", "Ceramic"][i % 3] === "Wood" ? ["Oak", "Reclaimed Wood"] : 
                    ["Wood", "Bronze", "Ceramic"][i % 3] === "Bronze" ? ["Cast Bronze"] : ["Ceramic", "Glaze"],
         style: ["Organic", "Figurative", "Textural"][i % 3],
-        image: `assets/images/featured-${((i + 2) % 4) + 1}.png`
+        image: `assets/images/stone-${(i % 3) + 1}.jpg`
     }))
 ];
 
 // Re-defining the list with explicit randomized variety for the UI
 const finalArtists = [
-    { name: "Amanda Marshall", materials: ["Bronze", "Gold Leaf"], style: "Abstract", image: "assets/images/sculpture_bronze_gold.png" },
-    { name: "Nadine Lopez", materials: ["Stainless Steel"], style: "Kinetic", image: "assets/images/sculpture_kinetic_steel.png" },
-    { name: "James Morgan", materials: ["Polished Granite"], style: "Monumental", image: "assets/images/sculpture_monumental_granite.png" },
-    { name: "Amanda Marshall", materials: ["Cast Glass", "Steel"], style: "Minimalist", image: "assets/images/sculpture_minimalist_glass.png" },
     { name: "Nadine Lopez", materials: ["Bronze", "Patina"], style: "Figurative", image: "assets/images/sculpture_figurative_bronze.png" },
-    { name: "Amanda Marshall", materials: ["Industrial Steel"], style: "Geometric", image: "assets/images/placeholder-2.png" },
-    { name: "Nadine Lopez", materials: ["Marble"], style: "Classical Abstract", image: "assets/images/featured-1.png" },
-    { name: "James Morgan", materials: ["Brushed Aluminum"], style: "Modernist", image: "assets/images/featured-2.png" },
-    { name: "Amanda Marshall", materials: ["Bronze"], style: "Figurative", image: "assets/images/featured-3.png" },
-    { name: "Nadine Lopez", materials: ["Glass", "Light"], style: "Contemporary", image: "assets/images/featured-4.png" },
-    { name: "Amanda Marshall", materials: ["Weathered Steel"], style: "Outdoor", image: "assets/images/placeholder-1.png" },
     { name: "Eleanor Vance", materials: ["Clay"], style: "Classical", image: "assets/images/clay-1.jpg" },
     { name: "Robert Klein", materials: ["Clay"], style: "Textural", image: "assets/images/clay-2.jpg" },
     { name: "Eleanor Vance", materials: ["Clay"], style: "Figurative", image: "assets/images/clay-3.jpg" },
@@ -50,10 +40,6 @@ const finalArtists = [
     { name: "Julian Thorne", materials: ["Stone"], style: "Surrealist", image: "assets/images/stone-1.jpg" },
     { name: "Marcus Reid", materials: ["Stone"], style: "Expressive", image: "assets/images/stone-2.jpg" },
     { name: "Julian Thorne", materials: ["Stone"], style: "Surrealist", image: "assets/images/stone-3.jpg" },
-    { name: "Silvia Russo", materials: ["Yellow Marble"], style: "Monumental", image: "assets/images/yellow-marble-1.jpg" },
-    { name: "David Chen", materials: ["Yellow Marble"], style: "Contemporary", image: "assets/images/yellow-marble-2.jpg" },
-    { name: "Silvia Russo", materials: ["Yellow Marble"], style: "Organic", image: "assets/images/yellow-marble-3.jpg" },
-    { name: "David Chen", materials: ["Yellow Marble"], style: "Abstract", image: "assets/images/yellow-marble-4.jpg" },
     { name: "Eleanor Vance", materials: ["Clay"], style: "Portraiture", image: "assets/images/new-clay-bust.jpeg" },
     { name: "Robert Klein", materials: ["Clay"], style: "Contemporary", image: "assets/images/new-clay-figure.jpeg" },
     { name: "Julian Thorne", materials: ["Stone"], style: "Figurative", image: "assets/images/new-plaster-hands.jpeg" },
